@@ -1,0 +1,292 @@
+/*      Css Reset     */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Body */
+
+html {
+  font-size: 22px;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/* components */
+
+h2,
+h3,
+h4 {
+  padding: 0.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+a {
+  color: hsl(25, 100%, 97%);
+}
+
+a:hover {
+  color: hsl(20, 11%, 84%);
+  text-decoration: none;
+}
+
+/* header */
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  justify-content: space-between;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+}
+
+nav ul {
+  display: inline-flex;
+  /* align-items: center; */
+}
+
+nav ul li {
+  align-self: center;
+  margin: 0.5rem;
+}
+
+main {
+  margin-top: 70px;
+}
+
+.banner {
+  height: 700px;
+  background-image: url("./images/mission-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.banner div {
+  background-color: black;
+  width: 100%;
+}
+
+.tea-month {
+  width: 1000px;
+  /* background-color: red; */
+  margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 2rem;
+}
+
+.tea-month p {
+  font-weight: 700;
+  margin: 0.5rem auto 1rem;
+}
+
+.tea-month article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tea-flavors {
+  margin: auto 0.6rem;
+}
+
+.tea-flavors img {
+  width: 300px;
+  height: 200px;
+}
+
+.tea-flavors p {
+  margin: 10px;
+}
+
+section.locations {
+  background-image: url("./images/locations-background.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  height: 500px;
+  margin: 3rem auto 0;
+  padding: 3rem;
+  width: 1200px;
+  text-align: center;
+}
+
+section.locations article {
+  display: flex;
+  /* height: 70%; */
+}
+
+div.locations {
+  width: 300px;
+  min-height: 100%;
+  /* margin-top: 15px; */
+  flex-flow: column wrap;
+  background-color: black;
+  margin: auto 40px;
+}
+
+div.locations:nth-of-type(1n) {
+  margin-right: 0;
+}
+
+div.locations li {
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+footer {
+  height: 200px;
+}
+
+footer h5,
+footer p {
+  margin: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+footer p:last-of-type {
+  text-align: left;
+  padding-bottom: 1rem;
+}
